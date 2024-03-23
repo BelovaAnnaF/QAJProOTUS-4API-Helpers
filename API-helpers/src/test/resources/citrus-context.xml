@@ -25,6 +25,10 @@
         <citrus:file path="classpath:citrus:properties"/>
     </citrus:global-variables>
 
+    <bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper">
+        <property name="serializationInclusion" value="NON_NULL"/>
+    </bean>
+
     <citrus-http:client id="httpClient"
                         request-url="${url}"
                         content-type="application/json"
