@@ -1,4 +1,4 @@
-package apiHelpersCitrus.Tests;
+package tests;
 
 import com.consol.citrus.annotations.CitrusTest;
 import com.consol.citrus.context.TestContext;
